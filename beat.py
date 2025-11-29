@@ -23,4 +23,10 @@ def get_beat_time():
     else:
         beats_string = "@" + str(beats)
 
+    if len(beats_string) < 7:
+        if len(beats_string) < 6:
+            beats_string = beats_string + ".00"
+        else:
+            beats_string = beats_string + "0"
+
     return beats_string
