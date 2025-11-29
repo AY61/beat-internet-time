@@ -1,6 +1,5 @@
 import datetime
 import pytz
-import math
 
 def get_beat_time():
 
@@ -14,7 +13,7 @@ def get_beat_time():
 
     total_seconds = (hour*3600) + (minute*60) + second + (microsecond/1000000)
     beats = round(total_seconds / 86.4, 2)
-    beats_string = 0
+    beats_string = None
     
     if beats < 10:
         beats_string = "@00" + str(beats)
