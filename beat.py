@@ -24,6 +24,3 @@ def get_beat_time():
         beats_string = "@" + str(beats)
 
     return beats_string
-
-value = get_beat_time()
-print(value)
